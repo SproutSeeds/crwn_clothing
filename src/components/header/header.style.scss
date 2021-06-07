@@ -1,0 +1,31 @@
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  //we set it to display flex because when we put
+  //justify content space-between, the children
+  //inside this parent will be pushed a part as far
+  //as possible as far as the width is concerened
+  justify-content: space-between;
+  //margin bottom pushes our pages rendered 25px down below the header
+  margin-bottom: 25px;
+
+  .logo-container {
+    height: 100%;
+    width: 70px;
+    padding: 25px;
+  }
+
+  .options {
+    // options always takes up 50% of whatever the header is
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .option {
+      padding: 10px 15px;
+    }
+  }
+}
